@@ -13,6 +13,7 @@ public class ObserverTest {
         WeatherData weatherData = new WeatherData();
 
         CurrentConditionsDisplay currentConditionsDisplay = new CurrentConditionsDisplay(weatherData);
+        new HeatIndexDisplay(weatherData);
 
         weatherData.setMeasurements(80, 65, 30.4f);
         weatherData.setMeasurements(82, 70, 29.2f);
