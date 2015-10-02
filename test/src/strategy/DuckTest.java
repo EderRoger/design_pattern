@@ -1,4 +1,4 @@
-package estudos.padroes;
+package strategy;
 
 import org.junit.Test;
 
