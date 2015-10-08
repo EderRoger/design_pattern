@@ -5,3 +5,5 @@
 # Observer
 
 # Decorator
+
+# Factory
