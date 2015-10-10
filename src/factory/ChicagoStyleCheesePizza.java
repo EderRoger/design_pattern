@@ -4,11 +4,18 @@ package factory;
  * Created by eder on 08/10/15.
  */
 public class ChicagoStyleCheesePizza extends Pizza {
-    public ChicagoStyleCheesePizza() {
+    PizzaIgredientFactory pizzaIgredientFactory;
+
+    public ChicagoStyleCheesePizza(PizzaIgredientFactory pizzaIgredientFactory) {
+        this.pizzaIgredientFactory = pizzaIgredientFactory;
         name = "Chigado deep cheese pizza";
-        dough = "Extra trick crust Dough";
-        sauce = "Plum tomato sauce";
         toppings.add("Sheered mussarela Cheese");
+    }
+
+    @Override
+    void prepare() {
+        dough = pizzaIgredientFactory.createDough();
+        sauce = pizzaIgredientFactory.createSauce();
     }
 
     @Override

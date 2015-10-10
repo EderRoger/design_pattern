@@ -10,7 +10,7 @@ public class NYPizzaIgredientFactory implements PizzaIgredientFactory {
     }
 
     @Override
-    public Sauce createSouce() {
+    public Sauce createSauce() {
         return new MarinaraSauce();
     }
 
@@ -20,8 +20,8 @@ public class NYPizzaIgredientFactory implements PizzaIgredientFactory {
     }
 
     @Override
-    public Vegies[] createVegies() {
-        Vegies vegies[] = {new Gralic(), new Onion(), new Mushuroom(), new RedPepper()};
+    public Veggies[] createVegies() {
+        Veggies vegies[] = {new Gralic(), new Onion(), new Mushuroom(), new RedPepper()};
         return  vegies;
     }
 

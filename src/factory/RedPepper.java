@@ -3,5 +3,5 @@ package factory;
 /**
  * Created by eder on 09/10/15.
  */
-public class RedPepper extends Vegies{
+public class RedPepper extends Veggies {
 }

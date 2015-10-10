@@ -1,12 +1,13 @@
 package factory;
 
 /**
- * Created by eder on 08/10/15.
+ * Created by eder on 09/10/15.
  */
-public class NYStylePepperoniPizza extends Pizza {
+public class ClamPizza extends Pizza {
+
     PizzaIgredientFactory pizzaIgredientFactory;
 
-    public NYStylePepperoniPizza(PizzaIgredientFactory pizzaIgredientFactory) {
+    public ClamPizza(PizzaIgredientFactory pizzaIgredientFactory) {
         this.pizzaIgredientFactory = pizzaIgredientFactory;
     }
 

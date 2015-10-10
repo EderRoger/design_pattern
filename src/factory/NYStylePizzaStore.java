@@ -1,9 +1,9 @@
 package factory;
 
 /**
- * Created by eder on 08/10/15.
+ * Created by eder on 09/10/15.
  */
-public class ChicagoPizzaStore extends PizzaStore {
+public class NYStylePizzaStore extends PizzaStore {
 
     @Override
     Pizza createPizza(String type) {
@@ -25,5 +25,4 @@ public class ChicagoPizzaStore extends PizzaStore {
         }
         return pizza;
     }
-
 }

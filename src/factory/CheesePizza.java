@@ -3,10 +3,10 @@ package factory;
 /**
  * Created by eder on 08/10/15.
  */
-public class NYStylePepperoniPizza extends Pizza {
+public class CheesePizza extends Pizza {
     PizzaIgredientFactory pizzaIgredientFactory;
 
-    public NYStylePepperoniPizza(PizzaIgredientFactory pizzaIgredientFactory) {
+    public CheesePizza(PizzaIgredientFactory pizzaIgredientFactory) {
         this.pizzaIgredientFactory = pizzaIgredientFactory;
     }
 
@@ -16,6 +16,6 @@ public class NYStylePepperoniPizza extends Pizza {
         dough = pizzaIgredientFactory.createDough();
         sauce = pizzaIgredientFactory.createSauce();
         cheese = pizzaIgredientFactory.createCheese();
-        clam = pizzaIgredientFactory.createClam();
+
     }
 }

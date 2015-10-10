@@ -5,9 +5,9 @@ package factory;
  */
 public interface PizzaIgredientFactory {
     Dough createDough();
-    Sauce createSouce();
+    Sauce createSauce();
     Cheese createCheese();
-    Vegies[] createVegies();
+    Veggies[] createVegies();
     Pepperoni createPepperoni();
     Clam createClam();
 }

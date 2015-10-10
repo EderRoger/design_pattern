@@ -8,7 +8,7 @@ import org.junit.Test;
 public class PizzaFactory {
     @Test
     public void testPizzaStore(){
-        PizzaStore nyStore = new NYPizzaStore();
+        PizzaStore nyStore = new NYStylePizzaStore();
         PizzaStore chigagoPizzaStore = new ChicagoPizzaStore();
 
         Pizza pizza = nyStore.orderPizza("cheese");
