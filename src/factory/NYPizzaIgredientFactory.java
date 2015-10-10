@@ -32,6 +32,6 @@ public class NYPizzaIgredientFactory implements PizzaIgredientFactory {
 
     @Override
     public Clam createClam() {
-        return new FrechClam();
+        return new FreshClam();
     }
 }

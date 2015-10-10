@@ -3,5 +3,5 @@ package factory;
 /**
  * Created by eder on 09/10/15.
  */
-public class FrechClam extends Clam {
+public class FreshClam extends Clam {
 }
