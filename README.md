@@ -11,4 +11,3 @@
 # Abstract Factory
 
 # another Pattern
-
