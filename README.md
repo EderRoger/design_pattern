@@ -10,4 +10,4 @@
 
 # Abstract Factory
 
-# another Pattern
+# Singleton
