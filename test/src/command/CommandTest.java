@@ -9,7 +9,7 @@ public class CommandTest {
     @Test
     public void testCommandExecute(){
         SimpleRemoteControl simpleRemoteControl = new SimpleRemoteControl();
-        Light light = new Light();
+        Light light = new Light("Led");
         LightOnCommand lightCommand = new LightOnCommand(light);
         simpleRemoteControl.setSlot(lightCommand);
         simpleRemoteControl.buttonWasPressed();

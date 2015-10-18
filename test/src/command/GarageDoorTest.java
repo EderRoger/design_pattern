@@ -10,10 +10,10 @@ public class GarageDoorTest {
     @Test
     public void testOpenGarage(){
         SimpleRemoteControl remote = new SimpleRemoteControl();
-        Light light = new Light();
+        Light light = new Light("Garage");
         GarageDoor garageDoor = new GarageDoor(light);
         LightOnCommand lightCommand = new LightOnCommand(light);
-        GarageDoorOpenCommand garageDoorOpenCommand = new GarageDoorOpenCommand(garageDoor);
+        GarageDoorUpCommand garageDoorOpenCommand = new GarageDoorUpCommand(garageDoor);
         remote.setSlot(lightCommand);
         remote.buttonWasPressed();
         remote.setSlot(garageDoorOpenCommand);
