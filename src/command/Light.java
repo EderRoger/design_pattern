@@ -9,6 +9,6 @@ public class Light {
     }
 
     public void off(){
-
+        System.out.println("Light is off");
     }
 }

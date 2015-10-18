@@ -1,0 +1,17 @@
+package command;
+
+/**
+ * Created by eder on 17/10/15.
+ */
+public class LightOffCommand implements Command {
+    Light light;
+
+    public LightOffCommand(Light light) {
+        this.light = light;
+    }
+
+    @Override
+    public void execute() {
+        light.off();
+    }
+}

@@ -3,10 +3,10 @@ package command;
 /**
  * Created by eder on 15/10/15.
  */
-public class LightCommand implements Command {
+public class LightOnCommand implements Command {
     private Light light;
 
-    public LightCommand(Light light) {
+    public LightOnCommand(Light light) {
         this.light = light;
     }
 
