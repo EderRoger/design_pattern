@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * Created by eder on 17/10/15.
  */
-public class RemoteTest {
+public class RemoteUndoTest {
 
     @Test
     public void testRemote(){
