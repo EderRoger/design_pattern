@@ -30,15 +30,22 @@ public class RemoteTest {
         remoteControl.setCommand(0, livingRoomLightOn, livingRoomLightOff);
         remoteControl.setCommand(1, kitchenLightOn, kitchenLightOff);
         remoteControl.setCommand(2, stereoOnWithCDCommand, stereoOffCommand);
+        remoteControl.setCommand(3, garageDoorUpCommand, garageDoorDownCommand);
 
         System.out.println(remoteControl);
 
         remoteControl.onButtonWasPushed(0);
         remoteControl.offButtonWasPushed(0);
+        System.out.println(remoteControl);
+        remoteControl.undoButtonWasPushed();
         remoteControl.onButtonWasPushed(1);
         remoteControl.offButtonWasPushed(1);
+        remoteControl.undoButtonWasPushed();
+        System.out.println(remoteControl);
         remoteControl.onButtonWasPushed(2);
         remoteControl.offButtonWasPushed(2);
+        remoteControl.onButtonWasPushed(3);
+        remoteControl.offButtonWasPushed(3);
     }
 
 }
