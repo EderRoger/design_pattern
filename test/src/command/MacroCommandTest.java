@@ -30,6 +30,10 @@ public class MacroCommandTest {
         remoteControl.setCommand(0, partyOnMacro, partyOffMacro);
 
         System.out.println(remoteControl);
+        System.out.println("-----Pushing macro on-----");
+        remoteControl.onButtonWasPushed(0);
+        System.out.println("-----Pushing macro off-----");
+        remoteControl.offButtonWasPushed(0);
 
     }
 }
