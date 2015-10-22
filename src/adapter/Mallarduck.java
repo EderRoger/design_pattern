@@ -8,7 +8,7 @@ import strategy.*;
 public class Mallarduck implements Duck {
 
     @Override
-    public void qack() {
+    public void quack() {
         System.out.println("Quack");
     }
 

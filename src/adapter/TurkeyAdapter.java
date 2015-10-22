@@ -11,7 +11,7 @@ public class TurkeyAdapter implements Duck {
     }
 
     @Override
-    public void qack() {
+    public void quack() {
         turkey.gooble();
     }
 
