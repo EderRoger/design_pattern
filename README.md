@@ -14,6 +14,6 @@
 
 # Command
 
-# Adapter And Facade
+# Adapter
 
 # Facade
