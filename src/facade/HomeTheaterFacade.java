@@ -39,4 +39,16 @@ public class HomeTheaterFacade {
         dvd.on();
         dvd.playMovie(movie);
     }
+
+    public void endMovie(){
+        System.out.println("Shuting movie theater down...");
+        popper.off();
+        lights.on();
+        screen.up();
+        projector.off();
+        amp.off();
+        dvd.stop();
+        dvd.eject();
+        dvd.off();
+    }
 }
