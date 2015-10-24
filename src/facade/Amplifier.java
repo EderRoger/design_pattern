@@ -5,7 +5,7 @@ package facade;
  */
 public class Amplifier {
     public void on() {
-
+        System.out.println("Amp on");
     }
 
     public void setDvd(DvdPlayer dvd) {
@@ -13,15 +13,15 @@ public class Amplifier {
     }
 
     public void setSurroundSound() {
-
+        System.out.println("Set surround");
     }
 
 
     public void setVolume(int volume) {
-
+        System.out.println("Volume increase in.. " + volume);
     }
 
     public void off() {
-
+        System.out.println("Amp off");
     }
 }
