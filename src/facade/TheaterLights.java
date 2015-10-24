@@ -7,4 +7,8 @@ public class TheaterLights {
     public void dim(int value) {
 
     }
+
+    public void on() {
+
+    }
 }

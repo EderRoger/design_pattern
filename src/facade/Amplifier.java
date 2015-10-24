@@ -20,4 +20,8 @@ public class Amplifier {
     public void setVolume(int volume) {
 
     }
+
+    public void off() {
+
+    }
 }
