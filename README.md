@@ -17,3 +17,5 @@
 # Adapter
 
 # Facade
+
+# Template method
