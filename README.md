@@ -18,4 +18,4 @@
 
 # Facade
 
-# Template method
+# Template method pattern
