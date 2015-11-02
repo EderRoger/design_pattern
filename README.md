@@ -22,4 +22,4 @@
 
 # Iterator
 
-# Composite and other next pattern
+# Composite
