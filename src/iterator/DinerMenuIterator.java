@@ -3,12 +3,12 @@ package iterator;
 /**
  * Created by eder on 03/11/15.
  */
-public class DinnerMenuIterator implements Iterator {
+public class DinerMenuIterator implements Iterator {
 
     MenuItem[] items;
     int position = 0;
 
-    public DinnerMenuIterator(MenuItem[] items) {
+    public DinerMenuIterator(MenuItem[] items) {
         this.items = items;
     }
 

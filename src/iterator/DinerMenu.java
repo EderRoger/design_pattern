@@ -27,7 +27,7 @@ public class DinerMenu {
     }
 
     public Iterator createIterator(){
-        return  new DinnerMenuIterator(menuItems);
+        return  new DinerMenuIterator(menuItems);
     }
 
 }
