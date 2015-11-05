@@ -8,8 +8,8 @@ import org.junit.Test;
 public class MenuTestIterator {
     @Test
     public void testWaitressPrintMenu(){
-        PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
-        DinerMenu dinerMenu = new DinerMenu();
+        Menu pancakeHouseMenu = new PancakeHouseMenu();
+        Menu dinerMenu = new DinerMenu();
 
         Waitress waitress = new Waitress(pancakeHouseMenu, dinerMenu);
         waitress.printMenu();
