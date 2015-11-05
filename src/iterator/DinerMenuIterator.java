@@ -3,7 +3,7 @@ package iterator;
 /**
  * Created by eder on 03/11/15.
  */
-public class DinerMenuIterator implements Iterator {
+public class DinerMenuIterator implements java.util.Iterator {
 
     MenuItem[] items;
     int position = 0;
