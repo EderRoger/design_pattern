@@ -10,8 +10,9 @@ public class MenuTestIterator {
     public void testWaitressPrintMenu(){
         Menu pancakeHouseMenu = new PancakeHouseMenu();
         Menu dinerMenu = new DinerMenu();
+        Menu caffeMenu = new CafeMenu();
 
-        Waitress waitress = new Waitress(pancakeHouseMenu, dinerMenu);
+        Waitress waitress = new Waitress(pancakeHouseMenu, dinerMenu, caffeMenu);
         waitress.printMenu();
     }
 }
