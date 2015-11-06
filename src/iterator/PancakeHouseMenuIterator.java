@@ -1,6 +1,7 @@
 package iterator;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Created by eder on 03/11/15.
