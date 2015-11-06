@@ -23,5 +23,3 @@
 # Iterator
 
 # Composite
-
-# More patterns
