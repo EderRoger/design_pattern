@@ -1,5 +1,6 @@
 package iterator;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
@@ -7,9 +8,15 @@ import java.util.Iterator;
  */
 public class Waitress {
 
+    ArrayList menus;
+
     Menu pancakeHouseMenu;
     Menu dinerMenu;
     Menu caffeMenu;
+
+    public Waitress(ArrayList menus) {
+        this.menus = menus;
+    }
 
     public Waitress(Menu pancakeHouseMenu, Menu dinerMenu, Menu caffeMenu) {
         this.pancakeHouseMenu = pancakeHouseMenu;
@@ -18,6 +25,14 @@ public class Waitress {
     }
 
     public void printMenu(){
+        Iterator menuIterator = menus.iterator();
+        while(menuIterator.hasNext()){
+            Menu menu = (Menu) menuIterator.next();
+            printMenu(menu.createIterator());
+        }
+    }
+
+    public void printMenuOldVersion(){
         Iterator pancakeIterator = pancakeHouseMenu.createIterator();
         Iterator dinerIterator = dinerMenu.createIterator();
         Iterator caffeIterator = caffeMenu.createIterator();
