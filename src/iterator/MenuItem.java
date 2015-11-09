@@ -1,9 +1,11 @@
 package iterator;
 
+import composite.MenuComponent;
+
 /**
  * Created by eder on 29/10/15.
  */
-public class MenuItem {
+public class MenuItem extends MenuComponent {
     String name;
     String description;
     boolean vegetarian;
@@ -30,5 +32,14 @@ public class MenuItem {
 
     public double getPrice() {
         return price;
+    }
+
+    public void print(){
+        System.out.print("     " + getName());
+        if(isVegetarian()){
+            System.out.println("(v)");
+        }
+        System.out.println(",     " + getPrice());
+        System.out.println("    ---" + getDescription());
     }
 }
