@@ -1,14 +1,23 @@
 package iterator;
 
-import java.util.ArrayList;
-import java.util.Iterator;
+import composite.MenuComponent;
 
 /**
  * Created by eder on 03/11/15.
  */
 public class Waitress {
 
-    ArrayList menus;
+    MenuComponent allMenus;
+
+    public Waitress(MenuComponent allMenus) {
+        this.allMenus = allMenus;
+    }
+
+    public void printMenu(){
+        allMenus.print();
+    }
+
+    /*ArrayList menus;
 
     Menu pancakeHouseMenu;
     Menu dinerMenu;
@@ -51,5 +60,5 @@ public class Waitress {
             System.out.print(menuItem.getPrice() + " -- ");
             System.out.print(menuItem.getDescription());
         }
-    }
+    }*/
 }
