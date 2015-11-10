@@ -10,6 +10,7 @@ import org.junit.Test;
 public class MenuTestIterator {
     @Test
     public void testWaitressPrintMenu() {
+
         MenuComponent pancakeHouseMenu = new Menu("PANCAKE HOUSE MENU", "Breakfast");
         MenuComponent dinnerMenu = new Menu("DINNER MENU", "Lunch");
         MenuComponent caffeMenu = new Menu("CAFFE MENU", "Caffe Menu");
