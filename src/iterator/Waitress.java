@@ -2,6 +2,8 @@ package iterator;
 
 import composite.MenuComponent;
 
+import java.util.*;
+
 /**
  * Created by eder on 03/11/15.
  */
@@ -13,8 +15,23 @@ public class Waitress {
         this.allMenus = allMenus;
     }
 
-    public void printMenu(){
+    public void printMenu() {
         allMenus.print();
+    }
+
+    public void printVegetarianMenu() {
+        java.util.Iterator iterator = allMenus.createIterator();
+        System.out.println("\n VEGETARIAN MENU\n--------");
+        while (iterator.hasNext()) {
+            MenuComponent menuComponent = (MenuComponent) iterator.next();
+            try {
+                if (menuComponent.isVegetarian()) {
+                    menuComponent.print();
+                }
+            } catch (UnsupportedOperationException e) {
+
+            }
+        }
     }
 
     /*ArrayList menus;

@@ -39,6 +39,7 @@ public class MenuTestIterator {
 
         Waitress waitress = new Waitress(allMenus);
         waitress.printMenu();
+        waitress.printVegetarianMenu();
 
     }
 }
