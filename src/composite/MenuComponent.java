@@ -1,5 +1,7 @@
 package composite;
 
+import java.util.Iterator;
+
 /**
  * Created by eder on 09/11/15.
  */

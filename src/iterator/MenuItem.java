@@ -2,6 +2,8 @@ package iterator;
 
 import composite.MenuComponent;
 
+import java.util.*;
+
 /**
  * Created by eder on 29/10/15.
  */
@@ -32,6 +34,10 @@ public class MenuItem extends MenuComponent {
 
     public double getPrice() {
         return price;
+    }
+
+    public java.util.Iterator createIterator(){
+        return new NullIterator();
     }
 
     public void print(){
