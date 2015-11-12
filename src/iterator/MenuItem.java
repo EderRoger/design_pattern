@@ -2,8 +2,6 @@ package iterator;
 
 import composite.MenuComponent;
 
-import java.util.*;
-
 /**
  * Created by eder on 29/10/15.
  */
