@@ -64,7 +64,26 @@ public class GumballMachine {
     }
 
     public void dispense(){
-
+        if(state == SOLD){
+            System.out.println("A gumball comming roling out to slot");
+            count--;
+            if(count == 0){
+                System.out.println("Oops, out of gumballs");
+                state = SOLD_OUT;
+            }else{
+                state = NO_QUARTER;
+            }
+        }else if(state == NO_QUARTER){
+            System.out.println("You need to pay first");
+        }else if(state == SOLD_OUT){
+            System.out.println("No gumballs dispensed");
+        }else if(state == HAS_QUARTER){
+            System.out.println("No gumballs dispensed");
+        }
     }
 
+    @Override
+    public String toString() {
+        return "Gumball .INC";
+    }
 }
