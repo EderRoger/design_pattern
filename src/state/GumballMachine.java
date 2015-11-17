@@ -47,4 +47,24 @@ public class GumballMachine {
         }
     }
 
+    public void turnCrank() {
+
+        if (state == SOLD) {
+            System.out.println("Turnig twice doesn't get to another gumball");
+        } else if (state == NO_QUARTER) {
+            state = HAS_QUARTER;
+            System.out.println("You turned but there's no quarter");
+        } else if (state == SOLD_OUT) {
+            System.out.println("You turned but there's no gumballs");
+        } else if (state == HAS_QUARTER) {
+            System.out.println("You turned...");
+            state = SOLD;
+            dispense();
+        }
+    }
+
+    public void dispense(){
+
+    }
+
 }
