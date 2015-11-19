@@ -37,11 +37,11 @@ public class GumballMachine {
         state.dispense();
     }
 
-    void setState(State state){
+    public void setState(State state){
         this.state = state;
     }
 
-    void releaseBall(){
+    public void releaseBall(){
         System.out.println("A gumball comes rolling out the slot...");
         if(count != 0){
             count--;
@@ -54,5 +54,17 @@ public class GumballMachine {
 
     public State getHasQuarterState() {
         return hasQuarterState;
+    }
+
+    public int getCount(){
+        return count;
+    }
+
+    public State getNoQuarterState() {
+        return noQuarterState;
+    }
+
+    public State getSoldState() {
+        return soldState;
     }
 }
