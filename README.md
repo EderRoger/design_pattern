@@ -23,3 +23,5 @@
 # Iterator
 
 # Composite
+
+# Next Pattern
