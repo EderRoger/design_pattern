@@ -25,5 +25,3 @@
 # Composite
 
 # Proxy
-
-#
