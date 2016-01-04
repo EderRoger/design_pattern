@@ -8,7 +8,8 @@ import state.GumballMachine;
  */
 public class GumballMonitorTest {
 
-    @Test public void testMonitor(){
+    @Test
+    public void testMonitor() {
         int count = 10;
 
         GumballMachine machine = new GumballMachine(count, "To the mall");
